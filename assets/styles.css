@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --head-font: "Playfair Display SC", serif;
+    --body-font:"Poppins", sans-serif;
+    --yellow-color:#FFD117;
+}
+body{
+    font-family: var(--body-font);
+    font-size: 1rem;
+    background-color: #fffefa;
+}
+h1{
+    font-family: var(--head-font);
+}
+.cust-nav{
+    background: rgba(64, 64, 64, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 237 110 / 89%);
+    font-size: 1.1rem;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+.cust-nav-item{
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-logo-back{
+    background: #000;
+    height: 140px;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    align-items: center;
+    margin: -0.5rem 7rem -3rem;
+}
+.banner{
+    margin-top: -100px;
+    position: relative;
+    max-height: 100vh;
+}
+.banner video{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.banner-cont{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    align-content: center;
+}
+.banner-cont h1{
+    font-size: 4rem;
+    width: 60%;
+    margin: auto;
+}
+.banner-cont p{
+    width: 50%;
+    margin: 1.5rem auto;
+}
+.index-btn{
+    background: var(--yellow-color);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: #000;
+    border: none;
+}
+.about{
+    padding: 6rem 0rem;
+}
+.sec-head{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+.about .side-img{
+    margin-top: -3rem;
+}
+.small-head{
+    color: var(--yellow-color);
+    font-family: var(--head-font);
+    font-size: 1.6rem;
+    text-shadow: 0px 1px 1px #cfcdcd;
+}
+.small-head img{
+   margin-top: -20px;
+}
+.about p{
+    width: 80%;
+    margin: 1rem 0rem;
+}
+.about-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-list li{
+    display: flex;
+    gap: 14px;
+    align-content: center;
+    margin: 1.5rem 0rem;
+}
+.about-list li img{
+    width: 60px;
+    height: 60px;
+}
+.about-list li span{
+    align-content: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.amenities{
+    padding: 5rem 0rem 4rem;
+    background: url(../images/amenities-back.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+    z-index: 1;
+}
+.amenities p{
+    width: 40%;
+    margin: auto;
+}
+.amenities::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.amen-card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.amen-card h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.amen-card img{
+    object-fit: cover;
+    height: 350px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 45px;
+}
+.plan{
+    padding: 6rem 0rem;
+}

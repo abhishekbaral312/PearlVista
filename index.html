@@ -4,55 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl Vista</title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="img/png" />
+   <link rel="shortcut icon" href="./images/favicon.png" type="img/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="./assets/styles.css">
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark cust-nav sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-md-none" href="#">
-        <img src="./images/logo.png" alt="logo" width="180px">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav cust-nav-item">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Amenities</a>
-        </li>
-      </ul>
+<div id="preloader">
+        <img id="loading-gif" src="./images/preloader.gif" alt="Loading...">
     </div>
-    <a class="navbar-brand d-none d-md-block nav-logo-back" href="#">
-        <img src="./images/logo.png" alt="logo" width="250px" class="mx-2">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav cust-nav-item">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Planning</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<main id="content">
+  <div data-include="./includes/header.html"></div>
+<!--------------------------- common header---------------------------->
 
-</nav>
+
 <section class="banner">
     <video src="./images/banner.mp4" autoplay muted loop></video>
     <div class="banner-cont">
@@ -191,26 +158,24 @@
                 <button class="index-btn">View Map</button>
             </div>
             <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.8489017652173!2d88.06005107518662!3d24.456027078195476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa3700507efa41%3A0x746e46135b42fee3!2sPearl%20Vista!5e0!3m2!1sen!2sin!4v1761056121598!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.8489017652173!2d88.06005107518662!3d24.456027078195476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa3700507efa41%3A0x746e46135b42fee3!2sPearl%20Vista!5e0!3m2!1sen!2sin!4v1761056121598!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         
     </div>
 </section>
-<footer>
-    <div class="container"><div class="row">
-        <div class="col-md-3">
-            <img src="./images/logo.png" alt="pearl vista" class="img-fluid">
-        </div>
-    </div>
-</div>
-    
-</footer>
 
+
+<!------------------------------ common footer ---------------------------------------------->
+<div data-include="./includes/footer.html"></div>
+
+</main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./assets/index.js"></script>
+   <script src="./include.js"></script>
+    <script src="./preloader.js"></script>
+   
 
     <script>
         $(function() {

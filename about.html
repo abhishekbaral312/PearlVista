@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Vista</title>
+   <link rel="shortcut icon" href="./images/favicon.png" type="img/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<div id="preloader">
+        <img id="loading-gif" src="./images/preloader.gif" alt="Loading...">
+    </div>
+<main id="content">
+  <div data-include="./includes/header.html"></div>
+<!--------------------------- common header---------------------------->
+
+    <div data-include="includes/other-ban.html" 
+     data-title="About Us" 
+     data-sub="A Vision of Contemporary Living"
+     data-breadcrumb="Home / About Us">
+</div>
+    <section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="small-head">About Project <span><img src="./images/heading-side.png" width="20px"></span></h3>
+                <h1 class="sec-head">A Vision of Contemporary Living</h1>
+                <p>Nestled in a serene location, our township offers a perfect blend of urban convenience and peaceful surroundings. Every detail — from architecture to landscape — is designed to create a self-sustained community where families can grow, connect, and thrive.</p>
+                <ul class="about-list">
+                    <li><img src="./images/about-1.png" ><span>Modern Integrated Living</span></li>
+                    <li><img src="./images/about-2.png" ><span>Nature-Inspired Community</span></li>
+                    <li><img src="./images/about-3.png" ><span>Connected Urban Lifestyle</span></li>
+                </ul>
+                <button class="index-btn">Contact Us</button>
+            </div>
+            <div class="col-md-6">
+                <img src="./images/about-ban.png" alt="about" width="100%" class="side-img">
+            </div>
+        </div>  
+    </div>
+
+</section>
+
+
+<!------------------------------ common footer ---------------------------------------------->
+<div data-include="./includes/footer.html"></div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="./include.js"></script>
+    <script src="./preloader.js"></script>
+   
+
+    <script>
+        $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    // autoplay: true,
+    margin: 30,
+    loop: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+    0: {
+      items: 1
+    },
+
+    600: {
+      items: 3
+    },
+
+    1024: {
+      items: 4
+    },
+
+    1366: {
+      items: 4
+    }
+  }
+  });
+});
+    </script>
+</body>
+</html>
